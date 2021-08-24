@@ -1,0 +1,20 @@
+server:
+  port: 8082
+
+logging:
+  level:
+    root: INFO
+    org.springframework.web: ERROR
+    com.howtodoinjava: DEBUG
+    org.hibernate: ERROR
+
+weather-client:
+  base-url: http://localhost:8081
+  streaming-url: /weatherevents
+  timeout: 5000ms
+
+location-client:
+  base-url: https://maps.googleapis.com
+  geocode-url: /maps/api/geocode/json
+  google-api-key:
+  timeout: 5000ms
